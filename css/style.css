@@ -1,0 +1,757 @@
+/*  ================================
+        global area start
+    ================================ */
+
+body {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
+    color: #1a1a1a;
+}
+
+a,
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.main-div {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*  ================================
+        global area end
+    ================================ */
+
+/*  ================================
+        header area start
+    ================================ */
+
+.header-top {
+    overflow: hidden;
+}
+
+.menu-top {
+    text-align: center;
+    background-color: #A70808;
+    margin-bottom: 50px;
+}
+
+.menu-top ul {
+    display: inline-block;
+}
+
+.menu-top li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.separate {
+    margin: 0 10px;
+    color: #fff;
+}
+
+.menu-top li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    transition: 0.5s;
+}
+
+.menu-top li a:hover {
+    color: #fff;
+}
+
+.fa-star {
+    color: #FBB007;
+}
+
+.logo-area {
+    border: 3px solid #6AB814;
+    padding: 10px 0;
+}
+
+.logo-area img {
+    width: 250px;
+}
+
+/*  ================================
+        product area start
+    ================================ */
+.product-area {
+    padding: 0 0 50px;
+}
+
+.con-info .product-dec {
+    padding: 30px 0;
+}
+
+.product-dec h3 {
+    color: #fff;
+}
+
+.product-dec h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.product-dec ul {
+    margin-bottom: 30px;
+}
+
+.product-dec ul li {
+    list-style: none;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.product-dec ul li::before {
+    position: absolute;
+    content: "\f058";
+    font-family: fontawesome;
+    left: 0;
+    color: #6AB814;
+}
+
+.product-dec ul.ar li::before {
+    content: "\f0da";
+    color: #000;
+}
+
+.tl {
+    text-align: left !important;
+}
+
+.more-video {
+    background-color: #CAF3C1;
+}
+
+.more-video h1,
+.get-info h1 {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 0 50px;
+    color: #000;
+}
+
+.more-video h3 {
+    background-color: #6AB814;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 30px 0;
+    color: #ffff;
+    text-align: center;
+    margin: 0;
+}
+
+.get-info {
+    padding: 50px 0;
+}
+
+.get-info-details img {
+    width: 80px;
+}
+
+.get-info-img {
+    padding: 100px 0;
+}
+
+.pd {
+    padding: 69px 0;
+}
+
+
+.un .pd {
+    padding: 50px 0;
+}
+
+.un ul li::before {
+    display: none;
+}
+
+.ri img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.more-video {
+    padding: 50px 0;
+}
+
+.ptd {
+    padding: 90px 0;
+}
+
+/*  ================================
+        product area end
+    ================================ */
+
+/*  ================================
+        tab area start
+    ================================ */
+
+.according {
+    margin-top: 30px;
+}
+
+.aspect-tab {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #D9D9D9;
+    opacity: 1;
+    transition: box-shadow .2s, opacity .4s;
+}
+
+.aspect-input {
+    display: none;
+}
+
+.aspect-input:checked ~ .aspect-content + .aspect-tab-content {
+    max-height: 5000px;
+}
+
+.aspect-input:checked ~ .aspect-content:after {
+    transform: rotate(0);
+}
+
+.aspect-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    max-height: 80px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.aspect-content {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.aspect-name {
+    display: inline-block;
+    font-weight: 700;
+    color: #000;
+    white-space: normal;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.aspect-stat {
+    width: 40%;
+    text-align: right;
+}
+
+.all-opinions {
+    color: $tab-text;
+    text-align: left;
+}
+
+.aspect-content + .aspect-tab-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s;
+}
+
+.aspect-content > div,
+.aspect-stat > div {
+    display: inline-block;
+}
+
+.aspect-content > div {
+    vertical-align: middle;
+}
+
+.sentiment-wrapper {
+    padding: 0 0 0 30px;
+}
+
+.tab-part-area {
+    padding: 100px 0;
+}
+
+section.tab-section {
+    display: none;
+    padding: 40px 45px;
+    border: 1px solid #ddd;
+    color: #1a1a1a;
+    overflow: hidden;
+}
+
+
+/*  ================================
+        tab area end
+    ================================ */
+
+/*  ================================
+        footer area start
+    ================================ */
+
+.main-footer {
+    padding: 10px 0;
+    background-color: #000;
+}
+
+.copy-right p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/*  ================================
+        footer area end
+    ================================ */
+.csslider {
+    position: relative;
+}
+
+.csslider > input {
+    display: none;
+}
+
+.csslider > input:nth-of-type(10):checked ~ ul li:first-of-type {
+    margin-left: -900%;
+}
+
+.csslider > input:nth-of-type(9):checked ~ ul li:first-of-type {
+    margin-left: -800%;
+}
+
+.csslider > input:nth-of-type(8):checked ~ ul li:first-of-type {
+    margin-left: -700%;
+}
+
+.csslider > input:nth-of-type(7):checked ~ ul li:first-of-type {
+    margin-left: -600%;
+}
+
+.csslider > input:nth-of-type(6):checked ~ ul li:first-of-type {
+    margin-left: -500%;
+}
+
+.csslider > input:nth-of-type(5):checked ~ ul li:first-of-type {
+    margin-left: -400%;
+}
+
+.csslider > input:nth-of-type(4):checked ~ ul li:first-of-type {
+    margin-left: -300%;
+}
+
+.csslider > input:nth-of-type(3):checked ~ ul li:first-of-type {
+    margin-left: -200%;
+}
+
+.csslider > input:nth-of-type(2):checked ~ ul li:first-of-type {
+    margin-left: -100%;
+}
+
+.csslider > input:nth-of-type(1):checked ~ ul li:first-of-type {
+    margin-left: 0;
+}
+
+.csslider > ul {
+    box-sizing: border-box;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    z-index: 1;
+    border: 2px solid #808080;
+    border-radius: 20px;
+}
+
+.csslider > ul > li {
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: initial;
+    height: 100%;
+    line-height: normal;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1) 0s;
+    vertical-align: middle;
+    white-space: normal;
+    width: 100%;
+    text-align: center;
+}
+
+.csslider > ul > li.scrollable {
+    overflow-y: scroll;
+}
+
+.csslider > .navigation {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.csslider > .navigation label {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+.csslider > .navigation label img {
+    max-height: 100%;
+}
+
+.csslider > .navigation label:hover::after {
+    opacity: 1;
+}
+
+.csslider > .navigation label::after {
+    background: transparent none repeat scroll 0 0;
+    border-radius: 50%;
+    content: "";
+    left: 50%;
+    margin-left: -6px;
+    margin-top: -6px;
+    opacity: 0;
+    padding: 6px;
+    position: absolute;
+    top: 50%;
+}
+
+.csslider > .arrows {
+    -moz-user-select: none;
+}
+
+.csslider.inside .navigation {
+    bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.csslider.inside .navigation label {
+    border: 1px solid #7e7e7e;
+}
+
+.csslider > input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1)::after,
+.csslider > input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2)::after,
+.csslider > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3)::after,
+.csslider > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4)::after,
+.csslider > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5)::after,
+.csslider > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6)::after,
+.csslider > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7)::after,
+.csslider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8)::after,
+.csslider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9)::after,
+.csslider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10)::after,
+.csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11)::after {
+    opacity: 1;
+}
+
+.csslider > .arrows {
+    box-sizing: content-box;
+    height: 26px;
+    left: -31px;
+    padding: 0 31px;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 0;
+}
+
+.csslider > .arrows label {
+    box-shadow: 2px -2px 0 1px #3a3a3a inset;
+    cursor: pointer;
+    display: none;
+    padding: 13px;
+    position: absolute;
+    top: -50%;
+    transition: box-shadow 0.15s ease 0s, margin 0.15s ease 0s;
+    z-index: 9999;
+}
+
+.csslider > .arrows label:hover {
+    box-shadow: 3px -3px 0 2px #0168B3 inset;
+    margin: 0;
+}
+
+.csslider.infinity > input:first-of-type:checked ~ .arrows label.goto-last,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(0),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(1),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(4),
+.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(5),
+.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(6),
+.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(7),
+.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(8),
+.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(9),
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(10) {
+    display: block;
+    left: -27px;
+    right: auto;
+    transform: rotate(45deg);
+}
+
+.csslider.infinity > input:last-of-type:checked ~ .arrows label.goto-first,
+.csslider > input:nth-of-type(1):checked ~ .arrows > label:nth-of-type(2),
+.csslider > input:nth-of-type(2):checked ~ .arrows > label:nth-of-type(3),
+.csslider > input:nth-of-type(3):checked ~ .arrows > label:nth-of-type(4),
+.csslider > input:nth-of-type(4):checked ~ .arrows > label:nth-of-type(5),
+.csslider > input:nth-of-type(5):checked ~ .arrows > label:nth-of-type(6),
+.csslider > input:nth-of-type(6):checked ~ .arrows > label:nth-of-type(7),
+.csslider > input:nth-of-type(7):checked ~ .arrows > label:nth-of-type(8),
+.csslider > input:nth-of-type(8):checked ~ .arrows > label:nth-of-type(9),
+.csslider > input:nth-of-type(9):checked ~ .arrows > label:nth-of-type(10),
+.csslider > input:nth-of-type(10):checked ~ .arrows > label:nth-of-type(11),
+.csslider > input:nth-of-type(11):checked ~ .arrows > label:nth-of-type(12) {
+    display: block;
+    left: auto;
+    right: -27px;
+    transform: rotate(225deg);
+}
+
+.rt-container {
+    margin: 0 auto;
+    width: 76%;
+}
+
+.csslider ul li img {
+    height: 500px;
+    width: auto;
+    max-height: 100%;
+    margin: 20px 0;
+}
+
+.navigation > label {
+    border: 1px solid #ddd;
+    border-radius: 5px !important;
+    margin-bottom: 5px;
+}
+
+/***** medium Layout *****/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .product-area video {
+        width: 400px;
+        height: 400px;
+    }
+
+    .ptd {
+        padding: 43px 0;
+    }
+
+    .get-info-img {
+        padding: 220px 0;
+    }
+
+    .pd {
+        padding: 20px 0;
+    }
+
+    .un .pd {
+        padding: 0 0;
+    }
+}
+
+/***** Tablet Layout *****/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    body,
+    p {
+        font-size: 14px;
+    }
+
+    .product-dec h1,
+    .more-video h1,
+    .get-info h1 {
+        font-size: 22px;
+    }
+
+    .product-area video {
+        width: 300px;
+        height: 300px;
+    }
+
+    .pd,
+    .ptd,
+    .un .pd {
+        padding: 0;
+    }
+
+    .more-video br {
+        display: none;
+    }
+
+    .get-info-img {
+        padding: 50px 0;
+    }
+
+}
+
+/***** Mobile Layout *****/
+
+@media only screen and (max-width: 767px) {
+    body,
+    p {
+        font-size: 14px;
+    }
+
+    .product-dec h1 {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .more-video {
+        padding-bottom: 20px;
+    }
+
+    .more-video h1,
+    .get-info h1 {
+        font-size: 20px;
+    }
+
+    .more-video h3 {
+        margin-bottom: 30px;
+    }
+
+    .menu-top {
+        margin-bottom: 30px;
+    }
+
+    .get-info-img {
+        padding: 30px 0;
+    }
+
+    .pd,
+    .ptd,
+    .un .pd {
+        padding: 0;
+    }
+
+    .more-video br {
+        display: none;
+    }
+
+    .product-area {
+        padding: 0 0 30px;
+    }
+
+    .product-area video {
+        width: 290px;
+        height: 290px;
+    }
+
+    .csslider ul li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .csslider > .navigation label {
+        width: 50px;
+        height: 50px;
+    }
+
+    .con-info .product-dec {
+        margin-bottom: 20px;
+    }
+
+    .product-dec h2,
+    .pro-title h3,
+    .product-dec h3,
+    .product-dec h4,
+    .single-care h3 {
+        font-size: 16px;
+    }
+
+    .tab-area label {
+        width: 100%;
+    }
+
+    section.tab-section {
+        padding: 30px 10px;
+    }
+
+    .ex {
+        padding: 0;
+    }
+
+    .sidebar-box {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .footer-img {
+        padding: 0;
+    }
+
+    .footer-left {
+        margin: 20px 0;
+    }
+
+    .footer-widget {
+        margin-bottom: 40px;
+    }
+
+    .footer-widget h2 {
+        margin: 0 0 20px;
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 200px;
+    }
+
+    .footer-widget {
+        margin-bottom: 50px !important;
+    }
+}
+
+/***** Wide Mobile Layout *****/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
